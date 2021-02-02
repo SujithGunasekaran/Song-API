@@ -1,0 +1,31 @@
+.about-heading
+{
+    color : white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding : 15px 0px;
+    font-weight: 500;
+}
+.about-method-subheading
+{
+    padding : 20px 0px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: .060rem;
+}
+.about-method-info li
+{
+    padding : 10px 0px;
+    color : rgb(216, 214, 214);
+    font-size: 1.000rem;
+    letter-spacing: .030rem;
+    line-height: 190%;
+}
+.about-highlight
+{
+    padding : 0px 5px;
+    background-color: lightgrey;
+    color : black;
+    font-weight: 500;
+}

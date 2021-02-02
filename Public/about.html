@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/form.css" />
+    <link rel="stylesheet" href="Css/about.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header-main">
+        <div class="header-display">
+            <div class="header-logo-name">Songs API</div>
+            <div class="header-link">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+            </div>
+        </div>
+    </div>
+    <div class="body-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <div class="about-heading">About Song API</div>
+                    <div class="about-method-subheading">GET : </div>
+                    <div class="about-method-info">
+                        <li>URL : <span class="about-highlight">http://localhost:5000/songList/get/songs</span> (
+                            development Purpose ).</li>
+                        <li>If Your going to make public api
+                            <be />
+                            <span class="about-highlight">http:'Your url'/songList/get/songs</span>
+                        </li>
+                        <li>If there is 40,000 data in your api result, page gets slow to load. so for that I have made
+                            query params in request <br />
+                            <span class="about-highlight">URL :
+                                http://localhost:5000/songList/get/songs?maxResult=10</span><br /> If we want only 10
+                            result
+                            initially we can send maxResult=10,
+                            If you have not send maxResult query param by default it will send 1000 result initially.
+                        </li>
+                        <li>If There is a need to filter data, we have an option for that.<br />
+                            <span class="about-highlight">URL :
+                                https://localhost:5000/songList/get/songs?filmName="Thani%20Oruvan"</span><br /> if you
+                            send query
+                            param of filmName in request.
+                            You will be getting only the filmName data which you have given
+                        </li>
+                    </div>
+                    <div class="about-method-subheading">POST : </div>
+                    <div class="about-method-info">
+                        <li><span class="about-highlight">URL : http://localhost:5000/songList/post/songs</span>
+                            (development
+                            Purpose).</li>
+                        <li>If Your going to make public api http:'Your url'/songList/POST/songs </li>
+                        <li>Sample JSON 👇</li>
+                        <pre class="about-highlight" id="sample-json"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let sampleObject = {
+        songName: "Name of song",
+        singerName: "Name of Singer",
+        filmName: "Name of film"
+    }
+    document.getElementById('sample-json').innerHTML = JSON.stringify(sampleObject, null, 2);
+</script>
+
+</html>
