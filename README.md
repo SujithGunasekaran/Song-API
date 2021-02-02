@@ -2,16 +2,26 @@
   
   -> Sample Project To Build Own API
   
-# Clone And Use 📋
+# About This Project 📋
 
   * This API is Completely build on Express.js, `node.js` Web Framework
-  * Installing `node.js` and `npm`. Try to install latest Version.
-  * After Installing `node.js` clone the repository into your local system using below command and run `npm install` command
   
-    > `https://github.com/SujithGunasekaran/Song-API.git`
-    
-  * After Finishing, run `npm run dev` and in localhost:5000 you can able to see page. There you can Test api for both get and post method pages rendered on server side
-  * I have used mongodb to store data.
+  * I have implemented `GET` and `POST` Method in this API.
+  
+  * If we like to add songs data, With the help of `post` method we can send.
+  
+  * I have used mongodb to store the data.
+  
+  * In `GET` Request. I have added two query param
+  
+      -> maxResult
+      
+      -> filmName
+     
+    maxResult is used to get minimum no.of data we want, and If we want only film songs we can send film name in filName Param. 
+     
+  * Run `npm run dev` and in localhost:5000 we can able to see page. There we can Test api for both get and post method. Pages rendered on server side.
+  
    
 # Technology Used 🛠
 
