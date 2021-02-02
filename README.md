@@ -20,7 +20,7 @@
      
     maxResult is used to get minimum no.of data we want, and If we want only film songs we can send film name in filmName Param. 
      
-  * Run `npm run dev` and in localhost:5000 we can able to see page. There we can Test api for both get and post method. Pages rendered on server side.
+  * Clone and Run `npm run dev` and in localhost:5000 we can able to see page. There we can Test api for both get and post method. Pages rendered on server side.
   
    
 # Technology Used 🛠
